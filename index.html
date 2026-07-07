@@ -3,37 +3,154 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saffron Global</title>
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1a1410;
-    color: #f5e9d8;
-    font-family: Georgia, 'Times New Roman', serif;
-    text-align: center;
+<title>Habibi Grocery and Restaurant | North Hills, CA</title>
+<meta name="description" content="Habibi Grocery and Restaurant in North Hills, CA — Bengali & South Asian grocery, Middle Eastern goods, deli, and fresh hot food & snacks. Open daily 10AM–10PM.">
+<meta name="theme-color" content="#C8102E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GroceryStore",
+  "name": "Habibi Grocery and Restaurant",
+  "servesCuisine": ["Bengali", "South Asian", "Middle Eastern"],
+  "telephone": "+17472364573",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16147 Nordhoff St",
+    "addressLocality": "North Hills",
+    "addressRegion": "CA",
+    "postalCode": "91343",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "22:00"
   }
-  .wrap { padding: 2rem; }
-  h1 {
-    font-size: clamp(2rem, 6vw, 3.5rem);
-    letter-spacing: 0.04em;
-    margin: 0 0 0.5rem;
-    color: #e0a940;
-  }
-  p {
-    font-size: 1.1rem;
-    opacity: 0.85;
-    margin: 0;
-  }
-</style>
+}
+</script>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Saffron Global</h1>
-    <p>Grocery &amp; Restaurant — coming soon.</p>
+
+<header>
+  <div class="nav-bar">
+    <a class="brand" href="#home">
+      <span class="name">Habibi</span>
+      <span class="tagline">Grocery &amp; Restaurant</span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#hours">Hours &amp; Location</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="call-btn" href="tel:+17472364573">📞 (747) 236-4573</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Habibi Grocery and Restaurant</h1>
+    <p class="subtitle">Bengali &amp; South Asian grocery, Middle Eastern goods, a full deli, and fresh hot food &amp; snacks made daily — right here in North Hills.</p>
+    <div class="hero-ctas">
+      <a class="btn gold" href="#menu">View Menu</a>
+      <a class="btn outline" href="#hours">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <p class="section-label">Our Story</p>
+    <h2>A taste of home, for everyone in the neighborhood</h2>
+    <p class="lede">Habibi is a Bengali and South Asian grocery at heart, stocked with the staples and specialty ingredients our community grew up with — alongside a wide selection of Middle Eastern goods reflecting the neighbors who shop here. Our deli and kitchen turn out fresh hot food and snacks every day, so you can grab dinner on the way home or stock up your pantry in the same trip.</p>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <p class="section-label">From the Deli</p>
+    <h2>Hot Food &amp; Snacks</h2>
+    <p class="lede">A few of the fresh favorites made in-house daily. Full grocery, deli, and specialty items available in-store.</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h3>Fuchka</h3>
+        <p>Crispy hollow puris filled with spiced potato, chickpea, and tangy tamarind water.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Mughlai Paratha</h3>
+        <p>Flaky stuffed flatbread filled with spiced egg and minced meat, pan-fried to order.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Samosas</h3>
+        <p>Golden fried pastry packed with spiced potatoes, peas, and warming spices.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Beef Rolls</h3>
+        <p>Seasoned ground beef rolled in a crisp pastry shell — a deli favorite.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Daal Puri</h3>
+        <p>Soft fried bread stuffed with spiced lentil filling, best enjoyed warm.</p>
+      </div>
+    </div>
+    <p class="menu-note">Online grocery ordering &amp; pickup coming soon.</p>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="container">
+    <p class="section-label">Visit Us</p>
+    <h2>Hours &amp; Location</h2>
+    <div class="hours-wrap">
+      <div class="info-card">
+        <h3>Store Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday – Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
+        </table>
+        <h3 style="margin-top:1.5rem;">Address</h3>
+        <p>16147 Nordhoff St<br>North Hills, CA 91343</p>
+        <a class="directions-btn" href="https://www.google.com/maps?q=16147+Nordhoff+St,+North+Hills,+CA+91343" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <iframe class="map-frame" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=16147+Nordhoff+St,+North+Hills,+CA+91343&output=embed">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Get In Touch</p>
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:+17472364573">
+        <span class="label">Call</span>
+        <span class="value">(747) 236-4573</span>
+      </a>
+      <a class="contact-card" href="mailto:info@saffron-global.net">
+        <span class="label">Email</span>
+        <span class="value">info@saffron-global.net</span>
+      </a>
+      <a class="contact-card" href="https://www.google.com/maps?q=16147+Nordhoff+St,+North+Hills,+CA+91343" target="_blank" rel="noopener">
+        <span class="label">Visit</span>
+        <span class="value">16147 Nordhoff St, North Hills, CA</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-name">Habibi Grocery and Restaurant</div>
+  <div>16147 Nordhoff St, North Hills, CA 91343 · (747) 236-4573</div>
+  <div style="margin-top:0.5rem;">© 2026 Habibi Grocery and Restaurant. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
